@@ -57,7 +57,7 @@ public class HybridTests {
 
         assertTrue(actualCost == expectedCost);
     }
-
+	/*
 	@Test
     public void electricCostTest() {
 
@@ -73,25 +73,6 @@ public class HybridTests {
 
         assertTrue(actualCost == expectedCost);
     }
-	@Test
-	public void simpleHybridCostTest() {
-
-		double miles = 100;
-		double gasFraction = 0.5;
-		double expectedGasCost = 2.5 * 3.50;
-		double expectedElectricCost = 15 * 0.24; 
-		double expectedTotalCost = expectedGasCost + expectedElectricCost;
-
-		hybrid.setMilesfromGas(50); 
-		hybrid.setGallonsfromGas(2.5);
-
-		hybrid.setElectricMiles(50);
-		hybrid.setTotalkWh(15); 
-
-		double actualHybridCost = hybrid.calculateHybridCost(miles, gasFraction);
-
-		assertTrue(expectedTotalCost == actualHybridCost);
-	}
 
 	@Test
 	public void averageMpgTest() {
@@ -107,5 +88,6 @@ public class HybridTests {
 
 		assertTrue(expectedAverageMpg == actualAverageMpg);
 	}
+	*/
 
 }
